@@ -281,11 +281,25 @@ text-decoration: none;
 .modalHead a:hover{
   color:var(--primaryDark);
 }
+/*-- PROJECTS --*/
+.subtitle:nth-of-type(3){
+    background-color: var(--primaryDark);
+}
+.link_project{
+  text-decoration: none;
+}
+.link_project .cardBody{color:black;}
+.projects{width: 90%; margin: 0% 5% ; background-color: var(--primaryDark); display: inline-block; padding-bottom: 5%;}
+.cardImgProject img{
+  width: 100%;
+   margin: 0%;
+}
+
 /* --- CREDITS ----*/
 .credits{
   width: 90%;
   margin: auto;
-  background-color: var(--primaryDark);
+  background-color: rgb(0,0,30);
   color:lightgray;
   padding: 2em;
 }
@@ -302,6 +316,9 @@ text-decoration: none;
 .credits iframe{
   display: block;
   margin-bottom: 2em;
+}
+.googleMap{
+  width:400px; height:300px; border:0;
 }
 /*-- ACCORDIONS MENU --*/
 .collapsible_menu{
@@ -337,6 +354,11 @@ text-decoration: none;
   line-height: 2;
   width: 100%;
 }
+.collapsible_menu{
+  font-size: 1em;
+  padding: 1em;
+  font-family: LCD5x8H;
+}
 .tab-content{
   max-height: 0px;
   box-shadow: 2px 2px 5px gray;
@@ -359,12 +381,14 @@ text-decoration: none;
 }
 .tab input[type="checkbox"] + label::after{content: "\2630";color:var(--secondaryDark);}
 .tab input[type="checkbox"]:checked + label::after{content:"\2716";transform: rotateY(360deg); color:var(--primaryLight);}
+/*-- SMALL SCREEN MENU --*/
 .nav_menu{
   display: block;
   width: 100%;
   color: lightgray;
   padding: 1em;
 }
+
 .navCollapsible{
   font-size: 1em;
 }
@@ -393,7 +417,7 @@ text-decoration: none;
   .navTab{
     display: none;
   }
-  .txtContainer,.chapters,.activity, .credits{
+  .txtContainer,.chapters,.activity, .credits,.projects{
     width: 100%;
     margin: 0%;
   }
@@ -438,8 +462,11 @@ text-decoration: none;
 /*------------- SMALL SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 480px){
+  .modalHead{font-size:0.8em;}
+  .modalbody{font-size: 0.8em;}
 .introImgContainer{height: 200px;}
 .introImage{height: 200px;}
   .cardBodyActivity{width: 80%; height: 200px;margin: 10% 10% 5% 10%;}
   .cardBodyActivity p{height: 20%;}
+  .googleMap{width: 100%;}
 }

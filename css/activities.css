@@ -1,5 +1,19 @@
 .imgActivity img{width: 100%;}
 .imgActivity{margin-bottom: 2em;}
-.activityVideo{width: 50%;}
+.activityVideo{width: 50%; margin-top: 2em;}
 .activityVideo video{width: 100%;
 margin: 2em;}
+/*------------- SMALL SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 480px){
+  .content{padding: 1em;}
+  .content iframe{
+    width: 100%;
+  }
+  .activityVideo{width: 100%;}
+  .activityVideo video{width: 100%; margin: 0%;}
+  .footer_activity{
+    font-size: 0.8em;
+  }
+  .footer_nav{padding: 0em;}
+}
