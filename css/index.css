@@ -294,7 +294,9 @@ text-decoration: none;
   width: 100%;
    margin: 0%;
 }
-
+.link_project:hover{
+  opacity: 0.5;
+}
 /* --- CREDITS ----*/
 .credits{
   width: 90%;
