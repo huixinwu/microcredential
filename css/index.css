@@ -326,7 +326,6 @@ text-decoration: none;
   display: block;
   text-align: center;
   color: var(--secondary);
-  font-size: 0.7em;
   text-shadow: 2px 2px 3px lightgray;
 }
 .collapsibleContainer{
@@ -353,7 +352,7 @@ text-decoration: none;
   font-weight: 900;
   line-height: 2;
   width: 100%;
-  font-size: 0.6em;
+  font-size: 0.9em;
 }
 .collapsible_menu{
   font-size: 1em;
@@ -462,6 +461,8 @@ text-decoration: none;
 /*------------- SMALL SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 480px){
+
+  .tab label{font-size: 0.8em;}
   .modalHead{font-size:0.7em;}
   .modalbody{font-size: 0.7em;}
 .introImgContainer{height: 200px; margin-top: 5em;}
