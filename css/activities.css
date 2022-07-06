@@ -15,5 +15,5 @@ margin: 2em;}
   .footer_activity{
     font-size: 0.8em;
   }
-  .footer_nav{padding: 0em;}
+  .footer_nav_a{display: block;}
 }
