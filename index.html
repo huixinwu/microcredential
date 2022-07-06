@@ -1,115 +1,367 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="boostrapActivity1.css" type="text/css">
-
-    <title>Week 5 activities and final project instructions</title>
+    <meta name="description" content="This OER material is intended for use as the first level of web technology development.It focuses on the skills needed to build, maintain, and administrate a website. At the beginning of the courses, students will learn how to construct and test code in different interfaces such as HTML, CSS, and HTML5. " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Technology</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <h3 style="padding: 1em; text-align:center;" class="bg-secondary text-white">Week 5 Activities and Final Project Instructions</h3>
+<!-- intro image -->
+    <figure class="introImgContainer">
+      <div class="introImage">
+        <span class="title ani1">Web&nbsp</span>
+        <span class="title ani2">Technology</span>
+        <span class="quote">Education is the most powerful weapon which you can use to change the world! <br><i>Nelson Mandela</i></span>
+      </div>
+    </figure>
+<!-- navigation tabs -->
+    <nav class="navTab" id="navTab">
+      <a class="nav_tabs" href="#course">Web Technology</a>
+      <a class="nav_tabs " href="#chapters">Chapters</a>
+      <a class="nav_tabs " href="#exercises">Class Activity</a>
+      <a class="nav_tabs " href="#labExp">Projects</a>
+    </nav>
+<!-- introduction --->
+    <section class="txtContainer" id="course">
+      <dl>
+        <dt><b>PREFACE</b></dt>
+        <br>
+        <dd>This OER material is intended for use as the first level of web technology development. It focuses on the skills needed to build, maintain, and administrate a website. At the beginning of the courses, students will learn how to construct and test code in different interfaces such as HTML, CSS, and HTML5. After that, the course will teach students how to explore different libraries and frameworks, customize existing routines or procedures in their code, and leverage code from past projects to develop code for a new one. At the end, students will demonstrate their coding skills by translating design requirements and instructions into a responsive implementation using different interfaces and frameworks, and host their class work through the internet.
+        <br><br>
+        <b><em>Acknowledgements</em></b>
+        <br><br>
+        I want to give my thanks to my mother Wanxia who has taught me to trust in myself, in my abilities, and in my dreams. As my mom says: <i>“always do with the best you can offer!”</i>
+        <br><br>
+        I also want to give thanks to the support of OER in QCC that helped me organize the necessary documentation for the publication of this manual.
+        <br><br>
+        <i>Huixin Wu</i></dd>
+        <br><br>
+        <dt><b>CURRICULAR OBJECTIVES ADDRESSES BY THIS COURSE</b></dt>
+        <br>
+        <dd>At the end of the course, student shall be able to:
+        <br><br>
+        <ul>
+          <li>Build and test code using text editor, and translate design instruction into code.</li>
+          <li>Translate design direction into a responsive implementation using different web development techniques such as HTML, CSS, HTML5, and bootstrap5.</li>
+          <li>Collect and use existing routines or procedures and integrate them into their code.</li>
+          <li>Customize frameworks, like a blueprint or a template, for their application.</li>
+          <li>Display ingenuity and initiative to resolve difficulties while working on individual or team project.</li>
+          <li>Deliver tasks on-time and match quality requirements.</li>
+          <li>Carry his/her share of the team’s load and work with people with a variety of ideas and participate in a team culture.</li>
+          <li>Communicate with instructors and colleagues on application and development of projects.</li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+<!-- chapters -->
+    <h2 class="subtitle" id='chapters'>CHAPTERS</h2>
+    <section class="chapters" >
+      <!-- chapter 1: web technology -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/web_icon.png" alt="icon of a computer" title="Web Technology Chapter">
+        </div>
+        <div class="cardBody" id="HTML">
+          <h3>Web Technology</h3>
+          Student will learn how the web works, the different type of internet browsers, web servers, screen readers, what do you see on a web and how it is created, what is HTML5, CSS3, frameworks, text editors, where and how to meet the community of web technology.
+        </div>
+        <div class="cardFooter">
+          <a href="#modal1">Learning Outcomes</a>
+          <a href="chapters/WebTechnology.pdf" target="_blank">Download Web Technology Chapter (pdf file)</a>
+          <a href="HTML/introVideos.html">Welcome to the web (mp4 video)</a>
+        </div>
+      </section>
+      <!-- chapter 2: HTML -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/html_icon.png" alt="icon of a HTML5" title="HTML Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>HTML Basic</h3>
+          HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">MDN</a>
+        </div>
+        <div class="cardFooter">
+          <a href="#modal2">Learning Outcomes</a>
+          <a href="chapters/HypertextMarkupLanguage.pdf" target="_blank">Download HTML Basic Chapter (pdf file)</a>
+          <a href="HTML/HTMLVideos.html">Supporting Videos</a>
+        </div>
+      </section>
+      <!-- chapter 3: CSS -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/ccs3_icon.png" alt="icon of a CSS3" title="CCS3 Essential Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>CCS3 Essential</h3>
+          <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a> </p>
+        </div>
+        <div class="cardFooter">
+          <a href="#modal3">Learning Outcomes</a>
+          <a href="chapters/CSS.pdf" target="_blank">Download CCS3 Essential Chapter (pdf file)</a>
+          <a href="HTML/CSSVideos.html">Supporting Videos</a>
+        </div>
+      </section>
+      <!-- chapter 4: Bootstrap 5 -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/bootstrap_icon.png" alt="icon of a Bootstrap5" title="Bootstrap 5 Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>Bootstrap 5</h3>
+          Bootstrap is a free and open-source front-end framework (library) for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
 
-    <div class="row rowAct">
-      <!-- final project -->
-      <div class="col-lg-12" style="margin-bottom:2%;">
-        <div class="card2">
-          <h5>Final project: project 1,3,4,5</h5>
-          <p><b>HTML and CSS requirement:</b>
-    			Create a sales website with the following requirements:
-    			<ul>
-  				<li>Student can choose the items to sell in the website and create their own website layout.</li>
-  				<li>List at least three products and each product must be linked to a modal window.</li>
-  				<li>Choose a primary color and or secondary color to apply to the website. Use variables to store the colors’ value.</li>
-  				<li>Apply one animation to the website.</li>
-  				<li>Should have internal/local navigation links.</li>
-  				<li>Website should be responsible to at least three window sizes.</li>
-  				<li>Contact section with social media.</li>
-  				<li>Footer for copyright information. </li>
-  			</ul>
-      <b>	JavaScript requirement:</b>
-      <ul>
-        <li>Add at least two JavaScript application to project 1. Each JavaScript should have an event listener and one of those event listeners should have a loop or conditional statement. </li>
-        <li>Implement temporary storage using JS. Each item in your sales website should have a link to the checkout webpage. When a user clicks on ADD TO BAG, you should apply temporary storage and add the selected product to your checkout webpage.</li>
-      </ul>
-      <b>General Requirements:</b>
-      <ul>
-        <li>Must be submitted on-time. Final project's due date is: Friday, Feb 11, by midnight</li>
-        <li>Must be live on the web through GitHub.</li>
-      </ul>
-      <b>FINAL PROJECT TOTAL POINT = 200</b>
-  	</div>
-  </div>
-      <!-- Office hour -->
-      <div class="col-lg-6" style="margin-bottom:2%;">
-        <div class="card2">
-      <!--      <iframe  src="videos/github.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;"></iframe>  -->
-          <h5>Schedule</h5>
+        </div>
+        <div class="cardFooter">
+          <a href="">Learning Outcomes</a>
+          <a href="">Download Bootstrap 5 Chapter (pdf file)</a>
+          <a href="">Supporting Videos</a>
+        </div>
+      </section>
+      <!-- chapter 5: JavaScript -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/JS.png" alt="icon of a JavaScript" title="JavaScript Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>JavaScript</h3>
+          JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. It is most well-known as the scripting language for Web pages, many non-browser environments, Node.js, Apache CouchDB and Adobe Acrobat, also use it.<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN</a>
+        </div>
+        <div class="cardFooter">
+          <a href="">Learning Outcomes</a>
+          <a href="">Download Bootstrap 5 Chapter (pdf file)</a>
+          <a href="">Supporting Videos</a>
+        </div>
+      </section>
+      <!-- chapter 6: SQL -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/postgresql.png" alt="icon of a PostgreSQL" title="PostgreSQL Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>PostgreSQL</h3>
+          PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.<a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">Wikipedia</a>
+        </div>
+        <div class="cardFooter">
+          <a href="">Learning Outcomes</a>
+          <a href="">Download Bootstrap 5 Chapter (pdf file)</a>
+          <a href="">Supporting Videos</a>
+        </div>
+      </section>
+      <!-- Publishing Website-->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/website_icon.png" alt="icon of a computer and a website" title="Publishing Website">
+        </div>
+        <div class="cardBody5">
+          <h3>Publishing Website</h3>
           <p>
-            <h6 style="text-decoration:underline;">Office hour:</h6>
-            <ul>
-              <li>Monday to Friday (Feb 7 - Feb 11): From 6pm to 8pm</li>
-              <li>Sunday (Feb 12): From 3pm to 6pm</li>
-            </ul>
-            <h6 style="text-decoration:underline;">Due dates:</h6>
-            <ul>
-              <li>Final project due Friday,Feb 11, by midnight. Grade will be posted the next day </li>
-              <li>Week 5 activities due Tuesday, Feb 8, by midnight. Grade will be posted the next day </li>
-              <li>Week 4 activities due on Sunday, Feb 6 by midnight. Grade will be posted the next day</li>
-            </ul>
-            Winners of best website will be announced on Monday, Feb 14, 2022.
-          </p>
-        </div>
+          <h4>Hosting your website on a server</h4>
+          In this article, I'll walk you through one way that you can take your webpage and host it on your own server. Why would you want that? And what's a "server" anyway? When you visit websites on the internet, they are each hosted by a "server". A server is a computer located somewhere in the world that's connected to the internet, and that computer's job is to "serve" webpages to internet users that want to view them.
+          <a href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-your-own-server" target="_blank" class="khanLink"> Continue Reading</a>
+          <h4>Hosting your website on Github</h4>
+           Github is a company that hosts "code repositories", collections of code for projects. Many of the code repositories are "open source", which means they're publicly available for the whole world to browse. That's awesome, because that's how programmers learn from each other and build on each other's work! Khan Academy has quite a few open source repositories. Code repositories can contain all sorts of types of code, not just HTML and CSS - whatever code is needed to make the project work.
+           <a href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github" target="_blank" class="khanLink"> Continue Reading</a>
+           <iframe  src="activities/github.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;" style="margin-top:2em;"></iframe>
+           <br><br>
+         </p>
+       </div>
+     </section>
+    <!-- Community -->
+    <section class="card">
+      <div class="cardImg">
+        <img src="images/community_icon.png" alt="icon of a web technology community" title="Web Technology Community">
       </div>
-      <!-- activity 3-->
-      <div class="col-lg-6" style="margin-bottom:2%;">
-        <div class="card2">
-          <iframe  src="videos/bootstrap.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;"></iframe>
-          <h5>Activity 3: Bootstrap</h5>
-          <p>Use Bootstrap to create four cards. All four cards must have title, image, description, and hyperlink to a webstie. Also, they need to responsive to three window size.</p>
-        </div>
+      <div class="cardBody6">
+        <h3>Stay Connect</h3>
+         <p>Web Technology Resource Communities</p>
+         <a href="https://www.w3schools.com/" target="_blank" title="Learn to code at Codecademy">
+           <figure>
+              <img src="images/w3school.png" alt="Codecademy logo">
+              <figcaption>W3 Schools</figcaption>
+           </figure>
+         </a>
+         <a href="https://developer.mozilla.org/en-US/" target="_blank">
+          <figure>
+             <img src="images/mdn.jpg" alt="Docs logo" title="Connect to mozilla developer MDN">
+            <figcaption>MDN Web Docs</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.khanacademy.org/" target="_blank" title="Learn to code at Khan Academy">
+          <figure >
+             <img src="images/khanAcademy.png" alt="Khan Academy logo">
+             <figcaption>Khan Academy</figcaption>
+          </figure>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank" title="Learn to code at Codecademy">
+          <figure class="codeacedemyLogo">
+             <img src="images/codecademy_logo.jpg" alt="Codecademy logo">
+             <figcaption>Codecademy</figcaption>
+          </figure>
+        </a>
       </div>
-  <!-- activity 4-->
-      <div class="col-lg-6" style="margin-bottom:2%;">
-        <div class="card2">
-          <iframe  src="videos/github.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;"></iframe>
-          <h5>Activity 4: GitHub</h5>
-          <p>Create a GitHub account with a repository named <i><b>microcredential</b> </i>. Upload one of your activities to the repository and make the activity live/hosted on the web. Copy the link of your active GitHub URL link and also your GitHub username in notepad/document. Save the notepad/document as <i><b>student_lastname_activity4</b></i> and upload the document as your activity 4. <br><b style="color:red;">IMPORT:</b> when your final project is done, the entire project should be upload to this repository and be active on the web.</p>
-        </div>
-      </div>
-  <!-- activity 5-->
-      <div class="col-lg-6">
-        <div class="card2">
-          <iframe  src="videos/storage.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;"></iframe>
-          <h5>Activity 5: Temporary Storage in JS</h5>
-          <p>Use your modal window activity and make the following modifications:
-            <ul>
-              <li>When click on ADD TO BAG link, it should take you to the <b>checkout.html</b> file</li>
-              <li>You must use storage, localStorage or sessionStorage, to transfer the data to your <b>checkout.html</b> </li>
-              <li>In the checkout webpage, you should display the name and the price of the item that you transfer from the modal window.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card2">
-  <!-- activity 6-->
-          <h5>Activity 6</h5>
-          <p>Save a screenshot of your database with table <b>data</b> in the database. If you couldn't complete this activity,  have a screenshot of the latest error message. </p>
-        </div>
-      </div>
+    </section>
+  </section> <!-- end of chapter container -->
+<!-- CLASS ACTIVITIES -->
+<h2 class="subtitle" id='activities'>HTML-CSS ACTIVITIES</h2>
+<section class="activity" >
+  <!-- HTML activities -->
+  <section class="cardBodyActivity">
+    <p>1. How internet works?</p>
+    <a href="html/activity1.html"><div class="cardActivity">
+      <img src="images/activity1.jpg" alt="image of computer">
+    </div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>2. Basic HTML</p>
+    <a href="html/activity2.html"><div class="cardActivity"><img src="images/activity2.jpg" alt="image of computer"></div></a>
+  </section>
+  <!-- CSS3 activities -->
+  <section class="cardBodyActivity">
+    <p>3. Basic CSS</p>
+    <a href="html/activity3.html"><div class="cardActivity"><img src="activities/activity_color_img.JPG" alt="image of computer"></div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>4. CSS animation</p>
+      <a href="html/activity4.html"><div class="cardActivity"><img src="images/activityAnimation.jpg" alt="image of computer"></div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>5. JavaScript Fundamentals</p>
+    <a ><div class="cardActivity" style="padding:1em;">Data Types, Variables, Operations</div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>6. JavaScript Essentials</p>
+    <a ><div class="cardActivity" style="padding:1em;">String, arrays, conditional statement</div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>7. JavaScript Essentials</p>
+    <a ><div class="cardActivity" style="padding:1em;">Loops and functions</div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>8. JavaScript and DOM</p>
+    <a ><div class="cardActivity" style="padding:1em;">JavaScript Events, Modern JavaScript: Using ES6+ </div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>9. API</p>
+    <a ><div class="cardActivity" style="padding:1em;">Introduce the concept of API </div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>10. SQL</p>
+    <a ><div class="cardActivity" style="padding:1em;">Data Types, select Query, ceate Database, create Table, Drop Table, Alter Table </div></a>
+  </section>
+  <section class="cardBodyActivity">
+    <p>11. PostgreSQL</p>
+    <a ><div class="cardActivity" style="padding:1em;">Work with Database, Update, Insert, Delete Syntax, Joins
+</div></a>
+  </section>
+</section> <!-- end of activities container -->
 
+<!-- credits -->
+<footer class="credits" id="credits">
+  <p>This Web Technology OER material, by Huixin Wu, is copyrighted under the terms of a Creative Commons license:</p>
+  <div class="copyrighted">
+   <a href="https://creativecommons.org/licenses/" target="_blank"> <img src="images/copyrighted.png"/></a>  <br>
+   <i>This work is freely redistributable for non-commercial use, share-alike with attribution.</i>
+  </div>
+ <p><em>Important note: </em>The materials used in this manual have the author's rights and are for educational use only. Some informative material is compiled from www.lynda.com, www.wikipedia.org, www.w3schools.com, www.khanacademy.com</p>
+ <hr> <br>
+ <b>About the Authors:</b>
+  Professor Wu is the course coordinator of the Digital Computer Theory course with the department of Engineering Technology at QCC. As the course coordinator, professor Wu updates the course outline and also creates homework and exercises to complement the learning materials for the course. She also has participated in grants and has experiences in creating new teaching terminologies for engineering technology students. She was the CO-PI of the National Science Foundation (NSF) STEM grant titled “A video Lecture Library and an Interactive Systems for Computer Programming Concepts”. In addition from her teaching schedule, she is the lead of the curriculum development of TechWorks grant, and a faculty mentor of the students Undergraduate Research Project program at QCC. Professor Wu has more than ten years of experience teaching  both electronics and computer programming courses in QCC and NYCCT.
+  <br><br><br>
+  For more information or feedback, contact:
+  <br><br>
+  <h3><a href="http://www.qcc.cuny.edu/engtech/ET_Faculty/Wu.html" target="_blank">Professor Huixin Wu</a></h3>
+  <b>Lecturer </b> <br>
+  <i>Engineering Technology Department </i> <br>
+  <a href="mailto:hwu@qcc.cuny.edu">hwu@qcc.cuny.edu</a>
+  <p>Queensborough Community College <br>222-05 56th Avenue, Bayside, NY 11364</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.3004099980126!2d-73.75958968459373!3d40.755416979327244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261fb05968f07%3A0x49ff66ba1d2376bd!2sQueensborough%20Community%20College!5e0!3m2!1sen!2sus!4v1657056089803!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <hr>
+  <i><h6>Web Technology: material prepared by professor Huixin Wu @ 2021</h6></i>
+</footer><!-- end of credits -->
+<!-- COLLAPSIBLE MENU-->
+<section class="collapsibleContainer">
+  <div class="tab">
+    <input type="checkbox" name="tabs" id="tab-menu">
+    <label for="tab-menu"><span class="collapsible_menu">Web Technology</span></label>
+    <div class="tab-content">
+      <nav class="navCollapsible">
+        <a class="nav_menu" href="#course">Introduction</a>
+        <a class="nav_menu " href="#chapters">Chapters</a>
+        <a class="nav_menu " href="#exercises">Class Activity</a>
+        <a class="nav_menu " href="#labExp">Projects</a>
+      </nav>
+    </div>
+  </div>
+</section>
+  <!-- MODAL WINDOW -->
+  <section class="modal" id="modal1">
+    <div class="modalFront">
+      <div class="modalHead"><span>Web Technology Learning Outcomes</span> <a href="#HTML">&#10006;</a>
+      </div>
+      <div class="modalBody">
+        This section students will:
+        <ul>
+          <li>Be introduced on how HTML describes the structure of a web page.</li>
+          <li>Learn how tags or elements are added to your document and how to work with three main tags (tags: body, head, and title)</li>
+          <li>Use headings and paragraphs tags to create structure markups (tags: h1-h6, p, b, I, sup, sub, br, hr)</li>
+          <li>Use words and sentences emphases tags to create semantic markups (tags: strong, em, blockquote, q,  abbr, cite, dfn, address, ins, del, s)</li>
+          <li>Use tags to create three different types of HTML lists: ordered, unordered, and definition lists.  </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- MODAL WINDOW -->
+  <section class="modal" id="modal2">
+    <div class="modalFront">
+      <div class="modalHead"><span>HTML Learning Outcomes</span> <a href="#HTML">&#10006;</a>
+      </div>
+      <div class="modalBody">
+        This section students will:
+        <ul>
+          <li>Be introduced on how HTML describes the structure of a web page.</li>
+          <li>Learn how tags or elements are added to your document and how to work with three main tags (tags: body, head, and title)</li>
+          <li>Use headings and paragraphs tags to create structure markups (tags: h1-h6, p, b, I, sup, sub, br, hr)</li>
+          <li>Use words and sentences emphases tags to create semantic markups (tags: strong, em, blockquote, q,  abbr, cite, dfn, address, ins, del, s)</li>
+          <li>Use tags to create three different types of HTML lists: ordered, unordered, and definition lists.  </li>
+          <li>Understand the elements and attributes and how to use them to create links between pages, link to other sites, and email links.</li>
+          <li>Understand the basic elements of images: the different types of images format (jpeg, gif, png), image dimensions, tools to edit and save images, and where and how to use images in a web page.</li>
+          <li>Use the different tags, elements, and attributes to manipulate and control an image display in a webpage.</li>
+          <li>Learn how to create tables, what information suits tables, and how to represent complex data in tables.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-</div><!-- end of row -->
+  <!-- MODAL WINDOW 3-->
+  <section class="modal" id="modal3">
+    <div class="modalFront">
+      <div class="modalHead"><span>CSS Learning Outcomes</span> <a href="#HTML">&#10006;</a>
+      </div>
+      <div class="modalBody">
+        This section students will:
+        <ul>
+          <li>Introduce how CSS works; learn how to write CSS rules and how they are applied to HTML pages; understand and use the various properties of CSS.</li>
+          <li>Learn how to specify colors and color terminology; how to use contrast and ensuring that your text is readable; and to use background colors in an entire page or part of the page. </li>
+          <li>Understand how to use properties in CSS to control a text format such as to choice font, size, weight, style, and spacing.</li>
+          <li>Learn how CSS properties in each HTML elements to control the dimensions of boxes, create borders around boxes, set margins and padding for boxes, and show and hide boxes.</li>
+          <li>Learn how to use several CSS properties to work with HTML elements such as lists, tables, and forms. Some of these properties involve in how to specify the type of bullet point or numbering on lists, add borders and backgrounds to table cells, and how to control the appearance of form controls.</li>
+          <li>Understand how to create attractive page layouts</li>
+          <li>Learn the different between fixed width and liquid layouts, and how they are created</li>
+          <li>Learn how to control the size alignment of an image, add background images, and images rollover using CSS. </li>
+          <li>Understand how to select elements using id and class</li>
+          <li>Explore the different ways to position elements using normal flow, relative positioning, absolute positioning and floats</li>
+          <li>Discover how various devices have different screen sizes and resolutions, and how this affects the design process</li>
+          <li>Learn how designers use grids to make their page designs look more professional.</li>
+          <li>Learn the different techniques to use and manipulate colors</li>
+          <li>Understand and create simple animation and slideshow using CSS animation @keyframes</li>
+          <li>Learn and use CSS’s attributes as transition, opacity, and pointer-event to create modal windows</li>
+          <li>Use @media query to create responsive webpages</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+ </body>
 </html>
