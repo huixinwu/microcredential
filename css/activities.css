@@ -3,6 +3,15 @@
 .activityVideo{width: 50%; margin-top: 2em;}
 .activityVideo video{width: 100%;
 margin: 2em;}
+/* =====================
+PROJECTS
+=======================*/
+table{width: 60%;margin: 2em 0em; background-color: white;}
+thead tr th{padding:  1em; background-color: lightblue; font-size: 1.2em;}
+tr td:nth-child(2){text-align: center; border-left: solid lightgray 1px;}
+tbody tr:nth-child(1){background-color:lightgray; padding: 0.5em;}
+td{border-bottom:  solid lightgray 1px;padding: 0.5em;}
+tbody tr:last-child{font-weight: 700;}
 /*------------- SMALL SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 480px){
