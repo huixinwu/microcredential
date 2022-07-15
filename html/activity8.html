@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Introduction web technology videos from YouTube" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/introVideos.css">
+    <link rel="stylesheet" href="../css/activities.css">
+    <title>Activity 7: JavaScript Fundamentals: Functions</title>
+  </head>
+  <body>
+    <header class="header"><a href="../index.html#activities">&#128281;</a><span>JavaScript Fundamentals: Functions</span> </header>
+    <section class="content">
+      <dl>
+        <ol>
+          <li><dt><b>checkName() function: without parameter/s or return value</b> </dt></li>
+          <dd>
+          Define a function called checkName() that asks for a valid name and console a greeting. Function  checkName() handles situation that happens if the user:
+          <ul>
+            <li>clicks Cancel on the dialog box</li>
+            <li>does not enter text in the dialog box</li>
+            <li>enters a number</li>
+          </ul><br>
+          If the user does one of those actions, checkName() function will open a dialog box with a message:
+          <ul>
+            <li><em><b>You forgot to enter a name. Enter a name again: </b> </em>. This message appears if the user did not enter a name and click Cancel or OK.</li>
+            <li><em><b>___ is invalid! Enter a name again: </b> </em>. This message appears if the user enters a number.</li>
+          </ul><br>
+          If the user keeps entering an invalid name, the dialog box will keep displaying the message requesting to enter a valid name. Otherwise, when the user enters a name, the console will print a message as  Welcome _______ to the class! . The name in the message must be all uppercase.
+          </dd>
+          <br>
+          <li>  <dt><b>checkNum() function: without parameter/s but return value</b> </dt></li>
+          <dd>
+          Define a function checkNum(), with no parameters but return value, that will ask a user to enter a number and return a true if it is an even number and false if it is an odd number .If the user enters a string, character, symbol, nothing at all, the function will display a dialog box again asking for a valid number. Once a valid number is entered, function checkNum() returns a true if a number is even and false if a number is odd.
+          </dd>
+          <br>
+          <li>  <dt><b>lottery() function: with parameter but no return value</b> </dt></li>
+          <dd>
+          Write a program that simulates a ticket purchase using function lottery().  The function takes one parameter as the number of games.  Function lottery() randomly generates five, numbers between 0 and 99, per game and console the numbers per game.
+        </dd><br>
+      </dl>
+      Check template video below:
+      <div class="activityVideo">
+         <video controls>
+           <source src="../activities/activityFunction.mp4" type="video/mp4">
+         </video>
+       </div>
+    </section>
+    <footer class="footer_activity">
+      <nav  class="footer_nav">
+        <a href="../index.html#chapters" class="footer_nav_a">Web Technology</a>
+        <a href="../index.html#activities" class="footer_nav_a">Class Activities</a>
+        <a href="../index.html#projects" class="footer_nav_a">Projects</a>
+      </nav>
+    </footer>
+  </body>
+</html>
