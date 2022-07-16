@@ -1,8 +1,11 @@
+.header{font-weight: 900; font-size: 1.2em;}
+.header span{font-size: 1.8em; color: var(--secondary);}
 .imgActivity img{width: 100%;}
 .imgActivity{margin-bottom: 2em;}
 .activityVideo{width: 50%; margin-top: 2em;}
 .activityVideo video{width: 100%;
 margin: 2em;}
+
 /* =====================
 PROJECTS
 =======================*/
@@ -12,8 +15,35 @@ tr td:nth-child(2){text-align: center; border-left: solid lightgray 1px;}
 tbody tr:nth-child(1){background-color:lightgray; padding: 0.5em;}
 td{border-bottom:  solid lightgray 1px;padding: 0.5em;}
 tbody tr:last-child{font-weight: 700;}
+/* =====================
+js.html
+=======================*/
+.js_ul{
+  width: 60%;
+  margin: 2em auto;
+}
+.js_ul a{
+display: block;
+padding:0.8em;
+text-decoration: none;
+color: var(--primaryDark);
+text-align: center;
+border-bottom: ridge 1px var(--primaryDark);
+}
+.js_ul a:hover{background-color: var(--secondary);}
+.js_ul a:active{background-color: var(--secondary);}
+/* --- footer ----*/
+.footer_nav_a:hover{color:var(--secondary);}
 /*------------- SMALL SCREEN ----------------------------------------
 */
+@media only screen and (max-width: 750px){
+  .header{font-size: 1em;}
+  .header span{font-size: 1.1em;}
+  .js_ul{
+    width: 90%;
+    margin: 1em auto;
+  }
+}
 @media only screen and (max-width: 480px){
   .content{padding: 1em;}
   .content iframe{
