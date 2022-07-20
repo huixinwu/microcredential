@@ -5,6 +5,8 @@
 .activityVideo{width: 50%; margin-top: 2em;}
 .activityVideo video{width: 100%;
 margin: 2em;}
+.linkContent{color: rgb(210,210,210)}
+.linkContent:hover{color: var(--secondary)}
 
 /* =====================
 PROJECTS
@@ -22,7 +24,7 @@ js.html
   width: 60%;
   margin: 2em auto;
 }
-.js_ul a{
+.js_ul a,{
 display: block;
 padding:0.8em;
 text-decoration: none;
