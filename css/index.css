@@ -184,15 +184,25 @@ dd b{
   float: left;
   height:150px;
   overflow: hidden;
+  color:rgb(220,220,220);
+}
+.activity_link{
+    color:rgb(220,220,220);
+    text-decoration: none !important;
 }
 .cardActivity img{
   width: 100%;
-
+}
+.cardActivity{
+color: rgb(220,220,220);
+}
+.jsCardActivity{
+  padding: 1em !important;
 }
 .cardBodyActivity p{
   text-align: center;
   height: 20%;
-  color:var(--primary);
+  color:rgb(220,220,220);
   background-color: var(--secondaryDark);
   padding: 0.5em;
   margin-top: 0%;
@@ -200,9 +210,14 @@ dd b{
   border-radius: 0.2em 0.2em 0em 0em;
   font-size: 0.85em;
 }
+.jsCardActivity:hover{
+  text-decoration: underline;
+}
 .cardBodyActivity:hover>p {
   background-color: var(--primaryDark);
-  color:var(--secondary);
+}
+.cardBodyActivity:hover>a {
+  background-color: var(--primaryDark);
 }
 .cardBodyActivity:hover>a .cardActivity img {
   opacity: 0.7;
@@ -328,7 +343,6 @@ text-decoration: none;
   display: block;
   text-align: center;
   color: var(--secondary);
-  text-shadow: 2px 2px 3px lightgray;
 }
 .collapsibleContainer{
   width: 100%;
