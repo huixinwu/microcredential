@@ -165,7 +165,7 @@ dd b{
   margin: 0.7em 0em;
 }
 /* -- ACTIVITY--*/
-.subtitle:nth-of-type(2){
+.subtitle{
     background-color: var(--primary);
 }
 .activity{
@@ -297,7 +297,7 @@ text-decoration: none;
   color:var(--primaryDark);
 }
 /*-- PROJECTS --*/
-.subtitle:nth-of-type(3){
+#projects{
     background-color: var(--primaryDark);
 }
 .link_project{
