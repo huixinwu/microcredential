@@ -148,6 +148,7 @@ dd b{
 }
 .cardBody{
   height: 15em;
+  overflow-y:  scroll;
 }
 .cardBody h3, .cardBody5 h3, .cardBody6 h3{
   color:var(--secondary);
