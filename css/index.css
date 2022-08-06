@@ -196,20 +196,22 @@ dd b{
 }
 .cardActivity{
 color: rgb(220,220,220);
+font-size: 0.85em;
 }
 .jsCardActivity{
   padding: 1em !important;
 }
 .cardBodyActivity p{
   text-align: center;
-  height: 20%;
+  height: auto;
   color:rgb(220,220,220);
   background-color: var(--secondaryDark);
-  padding: 0.5em;
+  padding: 0.6em;
   margin-top: 0%;
   margin-bottom: 0%;
   border-radius: 0.2em 0.2em 0em 0em;
   font-size: 0.85em;
+  overflow: hidden;
 }
 .jsCardActivity:hover{
   text-decoration: underline;
