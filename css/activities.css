@@ -7,7 +7,26 @@
 margin: 2em;}
 .linkContent{color: rgb(210,210,210)}
 .linkContent:hover{color: var(--secondary)}
-
+.content{
+  width: 90%;
+  margin: 5% 5% 0% 5%;
+  padding:1em;
+}
+/* ----- FOOTER NAV ------*/
+.footer_activity{
+  background-color: var(--primary);
+  color: lightgray;
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+}
+.footer_nav_a{
+  color:rgb(50,50,50);
+  padding: 1em;
+  background-color: var(--primary);
+  font-weight: lighter;
+  font-size: 0.8em;
+}
 /* =====================
 PROJECTS
 =======================*/
@@ -36,6 +55,11 @@ border-bottom: ridge 1px var(--primaryDark);
 .js_ul a:active{background-color: var(--secondary);}
 /* --- footer ----*/
 .footer_nav_a:hover{color:var(--secondary); font-weight: 900; transition: ease 0.3s;}
+/*------------- MEDIUM-LARGE SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 1100px){
+
+}
 /*------------- SMALL SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 750px){
@@ -54,7 +78,7 @@ border-bottom: ridge 1px var(--primaryDark);
   .activityVideo{width: 100%;}
   .activityVideo video{width: 100%; margin: 0%;}
   .footer_activity{
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .footer_nav_a{display: block; }
 }

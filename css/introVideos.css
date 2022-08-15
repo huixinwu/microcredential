@@ -13,11 +13,7 @@
   text-align: center;
   display: block;
 }
-.content{
-  width: 90%;
-  margin: 15% 5% 0% 5%;
-  padding: 1%;
-}
+
 .content>i{
   font-size: 0.8em;
 }
@@ -30,18 +26,4 @@ iframe{
   font-weight: 900;
   font-size: 1.2em;
   margin-top: 3em;
-}
-.footer_activity{
-  background-color: var(--primary);
-  color: lightgray;
-  display: inline-block;
-  padding: 1em;
-  width: 100%;
-}
-.footer_nav_a{
-  color: lightgray;
-  padding: 1em;
-  background-color: var(--primary);
-  font-weight: lighter;
-  font-size: 0.8em;
 }

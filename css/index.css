@@ -12,7 +12,7 @@ html{
   --secondaryDark: #7f0000;
 }
 /* ---- header ---*/
-header{width: 99%;position: fixed; top: 0%;overflow: hidden;  background-color: rgba(0,0,0,0.8); border-bottom: ridge 2px lightgray; padding: 1em; display: block;}
+.navigationHeader{width: 99%;position: fixed; top: 0%;overflow: hidden;  background-color: rgba(0,0,0,0.8); border-bottom: ridge 2px lightgray; padding: 1em; display: block;}
 
 .ani1{
     position: absolute;
@@ -452,7 +452,6 @@ text-decoration: none;
   .navTab{font-size: 0.9em;}
   .introImgContainer{height: 400px;margin-top: 5em;margin-bottom: 1em;}
   .introParagraph{font-size: 2.5em; padding-right: 1em;}
-
   .card{
     width: 40%;
     margin: 2% 0% 2% 7%;
@@ -511,12 +510,13 @@ text-decoration: none;
 /*------------- SMALL SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 480px){
-
+  .txtContainer{width: 100%; margin-top: 0%; padding-top: 0%;}
+  .introParagraph{font-size: 1.5em; padding: 1em;}
+  .subtitle{font-size: 1em; margin-top: 2em;}
+  .sessionTitle{font-size: 1.6em;}
   .tab label{font-size: 0.8em;}
   .modalHead{font-size:0.7em;}
   .modalbody{font-size: 0.7em;}
-.introImgContainer{height: 200px; margin-top: 5em;}
-.introImage{height: 200px;}
   .cardBodyActivity{width: 80%; height: 200px;margin: 10% 10% 5% 10%;}
   .cardBodyActivity p{height: 20%;}
   .googleMap{width: 100%;}
