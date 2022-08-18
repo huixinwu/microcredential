@@ -15,13 +15,13 @@ margin: 2em;}
 /* ----- FOOTER NAV ------*/
 .footer_activity{
   background-color: var(--primary);
-  color: lightgray;
+  color:  ;
   display: inline-block;
   padding: 1em;
   width: 100%;
 }
 .footer_nav_a{
-  color:rgb(50,50,50);
+  color:rgb(220,220,220);
   padding: 1em;
   background-color: var(--primary);
   font-weight: lighter;
@@ -30,8 +30,8 @@ margin: 2em;}
 /* =====================
 PROJECTS
 =======================*/
-table{width: 60%;margin: 2em 0em; background-color: white;}
-thead tr th{padding:  1em; background-color: lightblue; font-size: 1.2em;}
+.table_project{width: 60%;margin: 2em 0em; background-color: white;}
+.table_project head tr th{padding:  1em; background-color: lightblue; font-size: 1.2em;}
 tr td:nth-child(2){text-align: center; border-left: solid lightgray 1px;}
 tbody tr:nth-child(1){background-color:lightgray; padding: 0.5em;}
 td{border-bottom:  solid lightgray 1px;padding: 0.5em;}
@@ -65,10 +65,7 @@ border-bottom: ridge 1px var(--primaryDark);
 @media only screen and (max-width: 750px){
   .header{font-size: 1em;}
   .header span{font-size: 1.1em;}
-  .js_ul{
-    width: 90%;
-    margin: 1em auto;
-  }
+  .js_ul, .table_project{ width: 90%;margin: 1em auto;}
 }
 @media only screen and (max-width: 480px){
   .content{padding: 1em; }
