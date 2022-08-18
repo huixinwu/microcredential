@@ -9,16 +9,17 @@
   </head>
   <body>
 <!-- intro image -->
-<figure class="introImgContainer">
+<section class="introImgContainer">
   <p class="introParagraph">Learn the basic skills to become a Web Developer</p>
   <div class="introImage">
     <img src="images/intro.jpg" alt="image of someone typing on a keyboard">
   </div>
-</figure>
+</section>
 
 <!-- introduction --->
-<section class="txtContainer" id="course">
-  <h1 class="sessionTitle">What is this OER about?</h1>
+<p class="divider"id="course"></p>
+<h1 class="sessionTitle">What is this OER about?</h1>
+<section class="txtContainer" >
       <dl>
         <dt><b>Introduction</b></dt>
         <br>
@@ -51,9 +52,9 @@
   </section>
 <!-- CHAPTERS -->
     <p class="divider"id="chapters"></p>
+    <h1 class="sessionTitle">Web Technology Chapters</h1>
+    <p class="sessionSubtitle">Start learning from the most updated web technology concepts</p>
     <section class="chapters" >
-      <h1 class="sessionTitle">Web Technology Chapters</h1>
-      <p class="sessionSubtitle">Start learning from the most updated web technology concepts</p>
       <!-- chapter 1: web technology -->
       <section class="card">
         <div class="cardImg">
@@ -65,7 +66,7 @@
         </div>
         <div class="cardFooter">
           <a href="#modal1">Learning Outcomes</a>
-          <a href="materials/WebTechnology.pdf" target="_blank">Download Web Technology Chapter (pdf file)</a>
+          <a href="materials/WebTechnology.pdf" target="_blank">Supporting Materials</a>
           <a href="html/intro_videos.html">Welcome to the web (mp4 video)</a>
         </div>
       </section>
@@ -80,7 +81,7 @@
         </div>
         <div class="cardFooter">
           <a href="#modal2">Learning Outcomes</a>
-          <a href="materials/HypertextMarkupLanguage.pdf" target="_blank">Download HTML Basic Chapter (pdf file)</a>
+          <a href="materials/HypertextMarkupLanguage.pdf" target="_blank">Supporting Materials</a>
           <a href="html/html_videos.html">Supporting Videos</a>
         </div>
       </section>
@@ -95,7 +96,7 @@
         </div>
         <div class="cardFooter">
           <a href="#modal3">Learning Outcomes</a>
-          <a href="materials/CSS.pdf" target="_blank">Download CCS3 Essential Chapter (pdf file)</a>
+          <a href="materials/CSS.pdf" target="_blank">Supporting Materials</a>
           <a href="html/css_videos.html">Supporting Videos</a>
         </div>
       </section>
@@ -378,37 +379,52 @@
 <section class="projects" >
 <!-- project 1-->
 <a href="html/project1.html" class="link_project">
-  <section class="card card_project">
+  <section class="card">
     <div class="cardImg cardImgProject">
       <img src="images/project1.jpg" alt="image of project1" title="Informative Website">
     </div>
-    <div class="cardBody" id="html">
+    <div class="cardBody cardBodyProject" id="html">
       <h3>Informative Website</h3>
       Project 1 consists in creating an informative website. The information of the website is about a place (city, country, or state) where you want to inform people about that place, or talk about products, animals, people, enviroment, green planet, etc.
     </div>
+    <div class="cardFooter">
+       <a >Learning Outcomes</a>
+       <a href="html/project1.html">Project Description</a>
+       <a>_</a>
+     </div>
   </section></a>
 
   <!-- poject 2:  -->
   <a href="html/project2.html" class="link_project">
-    <section class="card card_project">
+    <section class="card">
       <div class="cardImg cardImgProject">
         <img src="images/project2.jpg" alt="image of project2" title="Informative Website">
       </div>
-      <div class="cardBody">
+      <div class="cardBody cardBodyProject">
         <h3>Sales Website</h3>
         This project consists of creating a sales website, with at least six products, applying all or almost  of the web technology features we have learned in class.
       </div>
+      <div class="cardFooter">
+         <a >Learning Outcomes</a>
+         <a href="html/project2.html">Project Description</a>
+         <a>_</a>
+       </div>
     </section></a>
 	<!-- Python and postgresql exercises-->
 <a href="activities/python_postgresql_exercises.pdf" class="link_project" target="_blank">
-  <section class="card card_project">
+  <section class="card">
     <div class="cardImg cardImgProject">
       <img src="images/python_postgresql.png" alt="image of a python code" title="Python and PostgreSQL Exercises">
     </div>
-    <div class="cardBody" id="html">
+    <div class="cardBody cardBodyProject" >
       <h3>Python and PostgreSQL Exercises</h3>
 	  Complete Python exercises a, b, c, and d, and PostgreSQL exercise e. Each exercise is graded up to 10 points for a total of 50 points for the five exercises.
       </div>
+      <div class="cardFooter">
+         <a >Learning Outcomes</a>
+         <a >Project Description</a>
+         <a>_</a>
+       </div>
   </section></a>
 </section>
 <!-- CREDITS -->
@@ -442,7 +458,7 @@
 <section class="collapsibleContainer">
   <div class="tab">
     <input type="checkbox" name="tabs" id="tab-menu">
-    <label for="tab-menu"><span class="collapsible_menu">Web Development </span></label>
+    <label for="tab-menu"><span class="collapsible_menu">Web Technology</span></label>
     <div class="tab-content">
       <nav class="navCollapsible">
         <a class="nav_menu" href="#course">About this OER</a>
