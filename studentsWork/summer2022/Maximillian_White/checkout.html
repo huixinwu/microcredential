@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <style media="screen">
+      .link{position: relative; left: 37%;}
+      .card{box-shadow: 1px 1px 3px gray; width: 24%; margin-left: 1%; height: 100%; float: left;}
+      .card img{width: 100%; height: 45%;}
+      .card h3{text-align: center; padding: 0.5em; color: blue;}
+      .card p{padding: 0.5em;}
+    </style>
+  </head>
+  <body>
+    <h1 style = "text-align: center; font-size: 4em;">Your Cart</h1>
+    <section>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/814IztfQ5LL.jpg" alt="image of spring">
+      <h3>NBA 2K22</h3>
+      <p class="nba">$59.99</p>
+
+    </div>
+    <!-- card 2-->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/917JLu3S8DL._SX342_.jpg" alt="image of summer">
+      <h3>Fortnite</h3>
+      <p class="fort">$35.49</p>
+    </div>
+    <!-- card 3-->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71IJRU2k8yL._SX425_.jpg" alt="image of fall">
+      <h3>Call of Duty: Cold War</h3>
+      <p class="cod">$29.99</p>
+    </div>
+    <!-- card 4-->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61+s8HfeFoL._SX342_.jpg" alt="image of winter">
+      <h3>Grand Theft Auto V</h3>
+      <p class="gta">$59.99</p>
+    </div>
+  </section>
+
+
+    <form class="" action="thankyou.html" method="POST" >
+    <fieldset>
+    <legend>Contact Information</legend>
+   <p>Instruction: Please fill in the blanks so we can send you a confirmation email after you complete your purchase.</p>
+   <input type="name" name="name" required value="" title="Your Info will
+   be secure with us" placeholder="Enter your Name:" style="width:300px">
+   <br>
+   <input type="email" name="email_name" required value="" title="Your Info will
+   be secure with us" placeholder="Enter your Email:" style="width:300px">
+   <br>
+    <a href="thankyou.html">Complete Purchase</a>
+    </fieldset>
+    <a class="link" href="project2.html">Continue Shopping for PS4</a>
+    <a class="link" href="project2x.html">Continue Shopping for XBOX</a>
+    </form>
+
+
+
+    <script type="text/javascript">
+
+      let gcount1 = sessionStorage.getItem('#gcount1')
+      let gcount2 = sessionStorage.getItem('#gcount2')
+      let gcount3 = sessionStorage.getItem('#gcount3')
+      let gcount4 = sessionStorage.getItem('#gcount4')
+      const amount = document.createElement('span')
+      const amount2 = document.createElement('span')
+      const amount3 = document.createElement('span')
+      const amount4 = document.createElement('span')
+      amount.innerHTML = gcount1
+      document.querySelector('.nba').append(amount)
+      amount2.innerHTML = gcount2
+      document.querySelector('.fort').append(amount2)
+      amount3.innerHTML = gcount3
+      document.querySelector('.cod').append(amount3)
+      amount4.innerHTML = gcount4
+      document.querySelector('.gta').append(amount4)
+    </script>
+  </body>
+</html>

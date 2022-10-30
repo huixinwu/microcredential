@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <style media="screen">
+      *{box-sizing: border-box;}
+      .page{background-color: blue;}
+      .title{background-color: white; color:black; text-align: center; font-size: 4em; position: fixed; top: -.9em; width: 100%;}
+      .title2{background-color: white; color:black; text-align: right; font-size: 2em; position: fixed; top: -.2em; right: 0%; width: 30%;}
+      .welcome{display: block; color:white; text-align: center; font-size: 3em; position: relative; top: 3em; width: 100%;}
+      .subtitle{text-align: right; font-family: "book antiqua";}
+      .link, .a_main{background-color: darkgray; color: purple; text-decoration: none; padding: 10px 20px;}
+      .link:hover{background-color: purple; color:darkgray; box-shadow: 0px 0px 3px 1px purple;}
+      .modalWindow{background-color: rgba(150,150,150,0.6); position: fixed; top:0px; bottom: 0px; left: 0px; right:0px; opacity: 0; pointer-events: none;}
+      .modalWindow:target{opacity: 1; pointer-events: auto; transition: ease-in 0.5s;}
+      .content_main, .content1{height: 450px; background-color: white; margin: 2em; box-shadow: 2px 2px 10px lightgray; border: solid lightgray; padding: 1em;}
+      .content_main{float: left; width: 250px; text-align: center; margin-left: 3em; background-color: white;}
+      .content1{ width: 500px; margin-right: auto; margin-left: auto; margin-top: 8em; position: relative; }
+      .info_main{ margin-bottom: 3em; }
+      .info_main img{ width: 100%; padding: 1em; }
+      .close{ background-color:lightgray; padding: 10px; position: absolute; top:0px; right: 0px; text-decoration: none; color: darkgray; font-weight: 600; }
+      .close:hover{ background-color: rgb(50,50,50); color: white; }
+      .info{ width:90%; height: 80%; position: absolute; top:10%; }
+      .info img{ width: 48%; float: left; height: 90%; }
+      .p_main{font-size: 1.3em;}
+      .p{ float:right; width: 50%; height: 90%; color: blue; font-size: .9em;}
+      .p i{ font-size: 0.6em; } .p span{ text-decoration: line-through; }
+      .p b{ color: red; font-size: 1.2em; }
+      .p hr{ margin-top: 60px; }
+      .add{ width: 90%; background-color: rgb(50,50,50); text-align: center; padding: 0.5em; color: lightgray; text-decoration: none; font-weight: bold; position: absolute; bottom: 10%;}
+      .add:hover{ background-color: lightgray; color:rgb(50,50,50); } .a_main{ margin-top:2em; display: block; }
+      .add2{ width: 90%; background-color: rgb(50,50,50); text-align: center; padding: 0.5em; color: lightgray; text-decoration: none; font-weight: bold; position: absolute; bottom: 10%;}
+      .add2:hover{ background-color: lightgray; color:rgb(50,50,50); } .a_main{ margin-top:2em; display: block; }
+      .add3{ width: 90%; background-color: rgb(50,50,50); text-align: center; padding: 0.5em; color: lightgray; text-decoration: none; font-weight: bold; position: absolute; bottom: 10%;}
+      .add3:hover{ background-color: lightgray; color:rgb(50,50,50); } .a_main{ margin-top:2em; display: block; }
+      .add4{ width: 90%; background-color: rgb(50,50,50); text-align: center; padding: 0.5em; color: lightgray; text-decoration: none; font-weight: bold; position: absolute; bottom: 10%;}
+      .add4:hover{ background-color: lightgray; color:rgb(50,50,50); } .a_main{ margin-top:2em; display: block; }
+
+      .nav{width: 100%; height: auto; margin-top: 2em; position: fixed; top: 2.4em;}
+      .nav a{background-color: white; width: 49.7%; padding: 1em; display: inline-block; text-align: center; text-decoration: none; color: blue;}
+      .nav a:hover{background-color: blue; color: white;}
+
+      /*Slideshow*/
+      .container_slideshow{ overflow: hidden; width: 75%; margin: 10em auto; position: relative;}
+      .slideAuto{ width: 100%; display: none; animation: slideAnimation 1s;}
+      @keyframes slideAnimation {
+      0%{transform: translateX(50px);}
+      100%{transform: translateX(0px);}
+      }
+      .slideAuto img{ width: 100%; vertical-align: middle;}
+      .slideAuto p{ position: absolute; left: 10%; right: 10%; bottom: 2%; text-align: center; font-size: 3em; color: white;}
+      .prev, .next{ position: absolute; top: 40%; color: gray; font-size: 2em; display: inline-block; padding: 0.2em 0.5em;}
+      .prev{ left: 5%;}
+      .next{ right: 5%;}
+      .prev:hover, .next:hover{ background-color: rgba(220,220,220,0.8); color:black;}
+      }
+    </style>
+  </head>
+  <body class="page">
+    <h1 class = "welcome">Welcome to GamesGalore <br> TAKE A LOOK AT ALL OF OUR CURRENT GAMES</h1>
+    <!-- slideshow-->
+    <section class="container_slideshow">
+      <div class="slideAuto">
+        <img src="https://clutchpoints.com/wp-content/uploads/2021/08/NBA-2K22-Player-Ratings-Which-NBA-Star-has-the-highest-rating-in-NBA-2K22.jpg">
+        <p style="color: white;">
+          <b>ON SALE</b>
+        </p>
+      </div>
+      <div class="slideAuto">
+        <img src="https://cdn.neow.in/news/images/uploaded/2020/11/1604331607_14br-consoles-1920x1080-wlogo-1920x1080-432974386.jpg">
+        <p>
+          <b>Now Available for Purchase
+        </p>
+      </div>
+      <div class="slideAuto">
+        <img src="https://gamingbolt.com/wp-content/uploads/2020/08/Call-of-Duty-Black-Ops-Cold-War_01.jpg">
+        <p>
+          <b>ON SALE</b>
+        </p>
+      </div>
+      <div class="slideAuto">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.Uo43vGMGu13JG8owFki6eAHaEo&pid=Api&P=0">
+        <p>
+          <b>ON SALE</b>
+        </p>
+      </div>
+    </section>
+    <!-- item 1-->
+    <section class="main_container"
+    id="games">
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://m.media-amazon.com/images/I/814IztfQ5LL.jpg" alt="NBA 2K22">
+          <div class="p_main"><b>NBA 2K22</b></div>
+        </section>
+        <a href="#openModal1" class="link" class="a_main">Click to add to cart</a>
+      </section>
+      <!-- item 2-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://m.media-amazon.com/images/I/917JLu3S8DL._SX342_.jpg" alt="FORTNITE">
+          <div class="p_main"><b>Fortnite</b></div>
+        </section>
+        <a href="#openModal2" class="link" class="a_main">Click to add to cart</a>
+      </section>
+      <!-- item 3-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://m.media-amazon.com/images/I/71IJRU2k8yL._SX425_.jpg" alt="CALL OF DUTY COLD WAR">
+          <div class="p_main"><b>Call Of Duty Cold War</b></div>
+        </section>
+        <a href="#openModal3" class="link" class="a_main">Click to add to cart</a>
+      </section>
+      <!-- item 4-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://m.media-amazon.com/images/I/61+s8HfeFoL._SX342_.jpg" alt="GRAND THEFT AUTO V">
+            <div class="p_main"><b>Grand Theft Auto V</b></div>
+        </section>
+        <a href="#openModal4" class="link" class="a_main">Click to add to cart</a>
+      </section>
+
+    <!-- modal window 1-->
+  <form action="checkout.html" method = "post">
+    <div class="modalWindow" id="openModal1">
+      <section class="content1">
+        <a class="close" href="#games">&#10005;</a>
+        <section class="info">
+          <img src="https://m.media-amazon.com/images/I/814IztfQ5LL.jpg" alt="WHITE CITRUS Lotion">
+          <div class="p">NBA 2K22<br>
+            <hr>
+              GamesGalore takes the court with NBA 2K22 on Xbox One! Enjoy competitive gameplay, online features, and a variety of game modes, including myCAREER, as you put together your dream team in this highly-anticipated basketball video game.
+              <hr>
+            <span class="gamePrice1">$59.99</span> <b>Now $14.99</b>
+          </div>
+        </section>
+        <button id="btn"><a class="add" href="#games">Add To Cart</a></button>
+      </section>
+    </div>
+	</form>
+
+  <!-- modal window 2-->
+<form action="checkout.html" method = "post">
+  <div class="modalWindow" id="openModal2">
+    <section class="content1">
+      <a class="close" href="#games">&#10005;</a>
+      <section class="info">
+        <img src="https://m.media-amazon.com/images/I/917JLu3S8DL._SX342_.jpg" alt="PINK WATERMELON Lotion">
+        <div class="p">Fortnite<br>
+          <hr>
+          Fortnite is a survival game where 100 players fight against each other in player versus player combat to be the last one standing.
+          <hr>
+          <b class="gamePrice2">$29.99</b>
+        </div>
+      </section>
+      <button id="btn2"><a class="add2" href="#games">Add To Cart</a></button>
+     </section>
+  </div>
+</form>
+
+<!-- modal window 3-->
+<form action="checkout.html" method = "post">
+<div class="modalWindow" id="openModal3">
+  <section class="content1">
+    <a class="close" href="#games">&#10005;</a>
+    <section class="info">
+      <img src="https://m.media-amazon.com/images/I/71IJRU2k8yL._SX425_.jpg" alt="PINK WATERMELON Lotion">
+      <div class="p">Call Of Duty Cold War<br>
+        <hr>
+        The CoD series is back with CoD®: Black Ops Cold War on PS4 - the direct sequel to the original and fan-favorite CoD®: Black Ops. CoD Black Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s.<hr>
+        <span class="gamePrice3">$59.99</span> <b>Now $35.49</b>
+      </div>
+    </section>
+    <button id="btn3"><a class="add3" href="#games">Add To Cart</a></button>
+  </section>
+</div>
+</form>
+
+<!-- modal window 4-->
+<form action="checkout.html" method = "post">
+<div class="modalWindow" id="openModal4">
+  <section class="content1">
+    <a class="close" href="#games">&#10005;</a>
+    <section class="info">
+      <img src="https://m.media-amazon.com/images/I/61+s8HfeFoL._SX342_.jpg" alt="PINK WATERMELON Lotion">
+      <div class="p">Grand Theft Auto V<br>
+        <hr>
+        In Grand Theft Auto V, you follow the epic storylines of A young street hustler, a retired bank robber and a terrifying psychopath. The trio must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.<hr>
+        <span class="gamePrice4">$59.99</span> <b>Now $49.99</b>
+      </div>
+    </section>
+    <button id="btn4"><a class="add4" href="#games">Add To Cart</a></button>
+  </section>
+</div>
+</form>
+<h1 class="title">GamesGalore</h1>
+<a class="title2" href="checkout.html" target="_blank">Click to Checkout &#x1F6D2</a>
+<nav class="nav">
+  <a href="project2x.html">XBOX</a>
+  <a href="project2.html">PS4</a>
+</nav>
+
+<script type="text/javascript">
+const slideAuto = document.querySelectorAll('.slideAuto')
+let indexSlide = 0;
+slideshowAuto()
+function slideshowAuto(){
+  let numSlides = slideAuto.length;
+  if (indexSlide>=numSlides){indexSlide = 0;}
+  if (indexSlide<0){indexSlide = numSlides - 1;}
+  for(let eachIndex = 0; eachIndex<numSlides; eachIndex++){
+    slideAuto[eachIndex].style.display = 'none';
+  }
+  slideAuto[indexSlide].style.display = 'block';
+  setTimeout(slideshowAuto,3000); //the second argument is the time in milliseconds
+  indexSlide++
+}
+let count1 = 0
+let count2 = 0
+let count3 = 0
+let count4 = 0
+
+const btn = document.querySelector('#btn')
+btn.onclick = function(){
+  count1 ++
+}
+
+const btn2 = document.querySelector('#btn2')
+btn2.onclick = function(){
+  count2 ++
+}
+const btn3 = document.querySelector('#btn3')
+btn3.onclick = function(){
+  count3 ++
+}
+const btn4 = document.querySelector('#btn4')
+btn4.onclick = function(){
+  count4 ++
+}
+var gcount1 = count1;
+sessionStorage.setItem("gcount1", gcount1);
+
+var gcount2 = count2;
+sessionStorage.setItem("gcount2", gcount2);
+
+var gcount3 = count3;
+sessionStorage.setItem("gcount3", gcount3);
+
+var gcount4 = count4;
+sessionStorage.setItem("gcount4", gcount4)
+
+</script>
